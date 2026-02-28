@@ -1,0 +1,125 @@
+QMainWindow {
+    background-color: #1e1e1e;
+}
+
+QWidget {
+    font-family: "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+    font-size: 10pt;
+    color: #ffffff;
+}
+
+QPushButton {
+    background-color: #1DB954;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 8px 20px;
+    font-size: 13px;
+}
+
+QPushButton:hover {
+    background-color: #17a044;
+}
+
+QPushButton:pressed {
+    background-color: #138a38;
+}
+
+QPushButton:disabled {
+    background-color: #555555;
+}
+
+QLineEdit {
+    border: 1px solid #444;
+    border-radius: 4px;
+    padding: 5px;
+    background-color: #2d2d2d;
+    color: #ffffff;
+}
+
+QLineEdit:focus {
+    border: 1px solid #1DB954;
+}
+
+QComboBox {
+    border: 1px solid #444;
+    border-radius: 4px;
+    padding: 5px;
+    background-color: #2d2d2d;
+    color: #ffffff;
+}
+
+QComboBox::drop-down {
+    border: none;
+    width: 20px;
+}
+
+QComboBox:focus {
+    border: 1px solid #1DB954;
+}
+
+QProgressBar {
+    border: 1px solid #444;
+    border-radius: 4px;
+    text-align: center;
+    background-color: #2d2d2d;
+    color: #ffffff;
+}
+
+QProgressBar::chunk {
+    background-color: #1DB954;
+    border-radius: 3px;
+}
+
+QTableWidget {
+    border: 1px solid #444;
+    border-radius: 4px;
+    background-color: #2d2d2d;
+    gridline-color: #444;
+}
+
+QTableWidget::item {
+    padding: 8px;
+    border-bottom: 1px solid #444;
+    color: #ffffff;
+}
+
+QTableWidget::item:selected {
+    background-color: #1DB954;
+    color: white;
+}
+
+QHeaderView::section {
+    background-color: #333;
+    padding: 8px;
+    border: none;
+    border-right: 1px solid #444;
+    border-bottom: 1px solid #444;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+QStatusBar {
+    background-color: #333;
+    color: #ffffff;
+    border-top: 1px solid #444;
+}
+
+QLabel {
+    color: #ffffff;
+}
+
+QMenuBar {
+    background-color: #333;
+    border-bottom: 1px solid #444;
+    color: #ffffff;
+}
+
+QMenuBar::item {
+    padding: 6px 12px;
+    background-color: transparent;
+}
+
+QMenuBar::item:selected {
+    background-color: #1DB954;
+}

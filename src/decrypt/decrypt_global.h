@@ -1,0 +1,48 @@
+#ifndef DECRYPT_GLOBAL_H
+#define DECRYPT_GLOBAL_H
+
+#include <QtGlobal>
+#include <QVector>
+#include <QByteArray>
+
+#if defined(DECRYPT_LIBRARY)
+#  define DECRYPT_EXPORT Q_DECL_EXPORT
+#else
+#  define DECRYPT_EXPORT Q_DECL_IMPORT
+#endif
+
+namespace DecryptConsts {
+    const int KGM_KEY_SIZE = 16;
+    const int KGM_HEADER_OFFSET = 0x10;
+    const int KGM_KEY_OFFSET = 0x1C;
+
+    const QVector<uint8_t> KGM_HEADER = {
+        0x7C, 0xD5, 0x32, 0xEB, 0x86, 0x02, 0x7F, 0x4B,
+        0xA8, 0xAF, 0xA6, 0x8E, 0x0F, 0xFF, 0x99, 0x14
+    };
+
+    const QVector<uint8_t> VPR_HEADER = {
+        0x05, 0x28, 0xBC, 0x96, 0xE9, 0xE4, 0x5A, 0x43,
+        0x91, 0xAA, 0xBD, 0xD0, 0x7A, 0xF5, 0x36, 0x31
+    };
+
+    const QVector<uint8_t> VPR_MASK_DIFF = {
+        0x25, 0xDF, 0xE8, 0xA6, 0x75, 0x1E, 0x75, 0x0E,
+        0x2F, 0x80, 0xF3, 0x2D, 0xB8, 0xB6, 0xE3, 0x11, 0x00
+    };
+}
+
+enum class FileType {
+    Unknown,
+    KGM,
+    KGMA,
+    KGG,
+    VPR
+};
+
+enum class OutputFormat {
+    MP3,
+    FLAC
+};
+
+#endif // DECRYPT_GLOBAL_H
