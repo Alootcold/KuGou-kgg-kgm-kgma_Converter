@@ -47,7 +47,7 @@ KuGouConverter（酷狗音乐格式转换器）是一款功能强大的桌面应
 
 ### 下载安装
 
-1. 从 [Releases](https://github.com/your-repo/KuGouConverter/releases) 下载最新版本
+1. 从 [Releases](https://github.com/Alootcold/KuGou-kgg-kgm-kgma_Converter/releases) 下载最新版本
 2. 运行安装程序 `KuGouConverter_Setup_v1.0.0.exe`
 3. 按照安装向导完成安装
 
